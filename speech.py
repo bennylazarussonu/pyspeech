@@ -29,10 +29,10 @@ import speech
 
 speech.say("Say something.")
 
-print "You said " + speech.input()
+print ("You said " + speech.input())
 
 def L1callback(phrase, listener):
-    print phrase
+    print (phrase)
 
 def L2callback(phrase, listener):
     if phrase == "wow":
@@ -154,7 +154,7 @@ def input(prompt=None, phraselist=None):
         listener.stoplistening()
 
     if prompt:
-        print prompt
+        print (prompt)
 
     if phraselist:
         listener = listenfor(phraselist, response)
